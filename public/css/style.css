@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/GroupImage1.jpg) no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/Top-Image-Gradient.png);
+  background-size: cover;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+/* Header Banner */
+
+header .banner {
+  display: inline-block;
+  width: 50%;
+  z-index: 101;
+  margin-top: 20%;
+  margin-left: 10%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* Navigation Bar */
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+#nav-wrap {
+  font: 14px 'Open Sans', sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+  /*letter-spacing: 1.5px;*/
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.opaque {
+  background-color: #333;
+}
+
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: 45%;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+
+ul#nav li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+#nav ul li a.middle-logo {
+  background: url(../img/JS_Logo.png);
+  background-repeat: no-repeat;
+  display: block;
+  padding: 0;
+}
