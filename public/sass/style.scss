@@ -7,7 +7,8 @@ header {
   min-height: 760px;
   width: 100%;
   overflow: hidden;
-  background: url(../img/GroupImage1.jpg) no-repeat top center;
+  background: url(../img/GroupImage1.jpg) no-repeat;
+  background-position: center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
 }
@@ -20,17 +21,17 @@ div#overlay {
   left: 0;
   background-image: url(../img/Top-Image-Gradient.png);
   background-size: cover;
-  opacity: 0.7;
+
   z-index: 1;
   width: 100%;
   min-height: 760px;
 }
 
 div#text-overlay {
+  width: 100%;
   position:absolute;
   z-index: 10;
 }
-
 
 /* Navigation Bar */
 
@@ -102,7 +103,6 @@ ul#nav li a:hover {
 
 div#logo-wrap {
   float:left;
-  margin-left: 15px;
   margin-top: 15px;
 }
 
@@ -111,10 +111,9 @@ div#membership {
   color: #fff;
   font: 14px $font-OpenSans;
   font-weight: 300;
-  width: 30%;
+  width: 45%;
   text-align: center;
   height: 68px;
-  margin-left: 5%;
 }
 
 div.member {
@@ -139,9 +138,185 @@ div.row-banner {
   margin-top: 18%;
   margin-left: 10%;
   color: #fff;
-  text-transform: uppercase;
+
 
   div.lineOne {
-    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+
+  h1.lineTwo {
+    font-weight: bold;
+    font-size: 5em;
+    margin: 0 0 !important;
+  }
+
+  h2.lineThree {
+    font-weight: bold;
+    font-size: 3.5em;
+    margin: 0 0 !important;
+  }
+}
+
+div.learn {
+  margin-left: 5%;
+  float: left;
+  display: inline-block;
+  margin-top: 25%;
+}
+
+a.learnButton {
+  font-size: 1.5em;
+  font: $font-OpenSans;
+  width: 100px;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  width: 100%;
+  z-index: 20;
+  position: relative;
+  background-color: #fff;
+}
+
+.languages {
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  text-align: center;
+
+  div.flex1, div.flex2, div.flex3, div.flex4, div.flex5, div.flex6 {
+    height: 150px;
+    flex: 1;
+    -webkit-flex: 1;
+    margin: 10px 0;
+  }
+}
+
+/*ABOUT*/
+
+#about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  div.about-container {
+    height: 525px;
+    flex: 1;
+    -webkit-flex: 1;
+    width: 50%;
+    background-color: #6C4B9C;
+
+    .about-content {
+      width: 70%;
+      margin: 50px auto;
+    }
+
+    h3.about-title {
+      color: #FFD018;
+      font-size: 1.625em;
+      font-weight: 400;
+    }
+
+    div.about-inner{
+      color: #FFD018;
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+  }
+
+  div.team-container {
+    height: 525px;
+    flex: 1;
+    -webkit-flex: 1;
+    width: 50%;
+    background-color: #FFD018;
+
+    .team-content {
+      width: 70%;
+      margin: 50px auto;
+    }
+
+    h3.team-title {
+      color: #6C4B9C;
+      font-size: 1.625em;
+      font-weight: 400;
+    }
+
+    div.team-inner {
+      color: #6C4B9C;
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+  }
+}
+
+/*COURSES AND EVENTS*/
+#courses {
+  font-family: $font-OpenSans;
+  width: 100%;
+
+  div.courses-container {
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  h2.courses-title {
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  hr {
+    color: #6C4B9C;
+    margin: 10px 0;
+  }
+
+  div.mid {
+    margin: 25px 0;
+    height: 260px;
+  }
+
+  img.mid-image {
+    height: 200px;
+    width: 300px;
+    background-color: #6C4B9C;
+    float: left;
+    margin-top: 2%;
+  }
+
+  h3.mid-title {
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  div.mid-content {
+    width: 60%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  div.mid-button {
+    background-color: #30184A;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
+    padding: 20px 30px;
+  }
+
+  div.mid-button a {
+    color: #fff;
+    text-decoration: none;
   }
 }
