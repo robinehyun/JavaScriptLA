@@ -228,10 +228,21 @@ section {
     background-color: #6C4B9C;
     float: left;
     margin-top: 2%; }
-  #courses h3.mid-title {
-    width: 60%;
+  #courses h3.events-title {
+    width: 175px;
     float: left;
-    margin-left: 5%; }
+    margin-left: 5%;
+    border-bottom: 1px solid #FFD018; }
+  #courses h3.training-title {
+    width: 145px;
+    float: left;
+    margin-left: 5%;
+    border-bottom: 1px solid #FFD018; }
+  #courses h3.slack-title {
+    width: 150px;
+    float: left;
+    margin-left: 5%;
+    border-bottom: 1px solid #FFD018; }
   #courses div.mid-content {
     width: 60%;
     float: left;
@@ -245,3 +256,55 @@ section {
   #courses div.mid-button a {
     color: #fff;
     text-decoration: none; }
+
+div.meetups {
+  position: relative;
+  background-image: url("../img/GroupImage2.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: #fff; }
+  div.meetups div.meetups-container {
+    background-image: url("../img/MeetupGradient.png");
+    z-index: 1;
+    height: 400px;
+    width: 100%; }
+  div.meetups div.meetups-contentCont {
+    width: 50%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 40px; }
+  div.meetups h2.meetups-title {
+    font-weight: 300;
+    font-size: 1.750em;
+    margin-bottom: 15px; }
+  div.meetups div.meetups-content {
+    line-height: 25px; }
+  div.meetups div.meetups-link {
+    margin-top: 15px; }
+  div.meetups div.meetups-link a {
+    text-decoration: none;
+    color: #FFD018; }
+
+#newsletter {
+  height: 575px;
+  width: 100%;
+  background-color: #301947; }
+  #newsletter div.newsletter-container {
+    height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 85px; }
+  #newsletter h2.newsletter-title {
+    font-weight: 300;
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 60px; }
+  #newsletter div.newsletter-signupCont {
+    height: 235px;
+    background-color: #fff; }

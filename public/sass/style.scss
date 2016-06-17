@@ -275,6 +275,7 @@ section {
   h2.courses-title {
     font-weight: 400;
     font-size: 2em;
+
   }
 
   hr {
@@ -295,10 +296,25 @@ section {
     margin-top: 2%;
   }
 
-  h3.mid-title {
-    width: 60%;
+  h3.events-title {
+    width: 175px;
     float: left;
     margin-left: 5%;
+    border-bottom: 1px solid #FFD018;
+  }
+
+  h3.training-title {
+    width: 145px;
+    float: left;
+    margin-left: 5%;
+    border-bottom: 1px solid #FFD018;
+  }
+
+  h3.slack-title {
+    width: 150px;
+    float: left;
+    margin-left: 5%;
+    border-bottom: 1px solid #FFD018;
   }
 
   div.mid-content {
@@ -319,4 +335,77 @@ section {
     color: #fff;
     text-decoration: none;
   }
+}
+
+div.meetups {
+  position: relative;
+  background-image: url('../img/GroupImage2.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  font-family: $font-OpenSans;
+  color: #fff;
+
+  div.meetups-container {
+    background-image: url('../img/MeetupGradient.png');
+    z-index: 1;
+    height: 400px;
+    width: 100%;
+  }
+
+  div.meetups-contentCont {
+    width: 50%;
+    float: left;
+    margin-left: 8%;
+    margin-top: 40px;
+  }
+
+  h2.meetups-title {
+    font-weight: 300;
+    font-size: 1.750em;
+    margin-bottom: 15px;
+  }
+
+  div.meetups-content {
+    line-height: 25px;
+  }
+
+  div.meetups-link {
+    margin-top: 15px;
+  }
+
+  div.meetups-link a {
+    text-decoration: none;
+    color: #FFD018;
+  }
+}
+
+#newsletter {
+  height: 575px;
+  width: 100%;
+  background-color: #301947;
+
+  div.newsletter-container {
+    height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 85px;
+  }
+
+  h2.newsletter-title {
+    font-weight: 300;
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+
+  div.newsletter-signupCont {
+    height: 235px;
+    background-color: #fff;
+  }
+
 }
