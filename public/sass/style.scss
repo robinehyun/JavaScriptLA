@@ -311,7 +311,7 @@ section {
   }
 
   h3.slack-title {
-    width: 150px;
+    width: 155px;
     float: left;
     margin-left: 5%;
     border-bottom: 1px solid #FFD018;
@@ -337,7 +337,7 @@ section {
   }
 }
 
-div.meetups {
+div#meetups {
   position: relative;
   background-image: url('../img/GroupImage2.jpg');
   background-size: cover;
@@ -389,7 +389,7 @@ div.meetups {
 
   div.newsletter-container {
     height: 350px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -406,6 +406,64 @@ div.meetups {
   div.newsletter-signupCont {
     height: 235px;
     background-color: #fff;
-  }
 
+    input {
+      width: 285px;
+      height: 45px;
+      border-color: #6C4B9C;
+      margin-top: 8%;
+      font-size: 1.25em;
+      margin-left: 4px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #6C4B9C;
+    }
+
+    button {
+      width: 590px;
+      height: 50px;
+      margin-top: 10px;
+      background-color: #fff;
+      border-color: #6C4B9C;
+      color: #301947;
+      font-size: 1.75em;
+    }
+  }
+}
+
+footer#end {
+  height: 170px;
+  font-family: $font-OpenSans;
+
+  nav.foot-nav-wrap {
+    width: 60%;
+    margin: 0 auto;
+
+    ul.foot-nav-list {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      text-transform: uppercase;
+      margin-top: 30px;
+
+      li {
+        position: relative;
+        list-style: none;
+        height: 48px;
+        display: inline-block;
+        margin: 0px 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #6C4B9C;
+      }
+    }
+  }
+  div.copyright {
+    font-size: 1.25em;
+    text-align: center;
+    color: #6C4B9C;
+  }
 }

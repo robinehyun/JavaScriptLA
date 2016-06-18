@@ -239,7 +239,7 @@ section {
     margin-left: 5%;
     border-bottom: 1px solid #FFD018; }
   #courses h3.slack-title {
-    width: 150px;
+    width: 155px;
     float: left;
     margin-left: 5%;
     border-bottom: 1px solid #FFD018; }
@@ -257,7 +257,7 @@ section {
     color: #fff;
     text-decoration: none; }
 
-div.meetups {
+div#meetups {
   position: relative;
   background-image: url("../img/GroupImage2.jpg");
   background-size: cover;
@@ -267,25 +267,25 @@ div.meetups {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   color: #fff; }
-  div.meetups div.meetups-container {
+  div#meetups div.meetups-container {
     background-image: url("../img/MeetupGradient.png");
     z-index: 1;
     height: 400px;
     width: 100%; }
-  div.meetups div.meetups-contentCont {
+  div#meetups div.meetups-contentCont {
     width: 50%;
     float: left;
     margin-left: 8%;
     margin-top: 40px; }
-  div.meetups h2.meetups-title {
+  div#meetups h2.meetups-title {
     font-weight: 300;
     font-size: 1.750em;
     margin-bottom: 15px; }
-  div.meetups div.meetups-content {
+  div#meetups div.meetups-content {
     line-height: 25px; }
-  div.meetups div.meetups-link {
+  div#meetups div.meetups-link {
     margin-top: 15px; }
-  div.meetups div.meetups-link a {
+  div#meetups div.meetups-link a {
     text-decoration: none;
     color: #FFD018; }
 
@@ -295,7 +295,7 @@ div.meetups {
   background-color: #301947; }
   #newsletter div.newsletter-container {
     height: 350px;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     color: #fff;
@@ -308,3 +308,46 @@ div.meetups {
   #newsletter div.newsletter-signupCont {
     height: 235px;
     background-color: #fff; }
+    #newsletter div.newsletter-signupCont input {
+      width: 285px;
+      height: 45px;
+      border-color: #6C4B9C;
+      margin-top: 8%;
+      font-size: 1.25em;
+      margin-left: 4px; }
+    #newsletter div.newsletter-signupCont input::-webkit-input-placeholder {
+      color: #6C4B9C; }
+    #newsletter div.newsletter-signupCont button {
+      width: 590px;
+      height: 50px;
+      margin-top: 10px;
+      background-color: #fff;
+      border-color: #6C4B9C;
+      color: #301947;
+      font-size: 1.75em; }
+
+footer#end {
+  height: 170px;
+  font-family: "Open Sans", sans-serif; }
+  footer#end nav.foot-nav-wrap {
+    width: 60%;
+    margin: 0 auto; }
+    footer#end nav.foot-nav-wrap ul.foot-nav-list {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      text-transform: uppercase;
+      margin-top: 30px; }
+      footer#end nav.foot-nav-wrap ul.foot-nav-list li {
+        position: relative;
+        list-style: none;
+        height: 48px;
+        display: inline-block;
+        margin: 0px 10px; }
+      footer#end nav.foot-nav-wrap ul.foot-nav-list a {
+        text-decoration: none;
+        color: #6C4B9C; }
+  footer#end div.copyright {
+    font-size: 1.25em;
+    text-align: center;
+    color: #6C4B9C; }
