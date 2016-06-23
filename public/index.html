@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css" media="screen" title="no title" charset="utf-8">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://use.fontawesome.com/0a10de4218.js"></script>
   </head>
   <body>
     <header>
@@ -26,7 +27,7 @@
               <img src="img/JS_Logo.png" />
             </div>
             <div id="membership">
-              <div class="member">Are you a member? <span><a href="#">Register</a> / <a href="#">Sign In</a></span></div>
+              <div class="member">Are you a member? <span><a id="register" href="#">Register</a> / <a id="signin" href="#">Sign In</a></span></div>
             </div>
           </div>
           <div class="row-banner">
@@ -46,42 +47,71 @@
 
     <div class="cd-user-modal">
       <div class="cd-user-modal-container">
-        <ul class="switcher">
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#">Register</a></li>
-        </ul>
+        <!-- <nav class="main-nav">
+          <ul class="switcher">
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Register</a></li>
+          </ul>
+        </nav> -->
+
 
         <div id="cd-login">
           <form class="cd-form">
             <p class="fieldset">
-              <input id="sign-in-email" type="email" name="email" placeholder="E-mail">
+              <input class="full-width has-padding has-border" id="sign-in-email" type="email" name="email" placeholder="E-mail">
             </p>
 
             <p class="fieldset">
-              <input id="sign-in-password" type="password" name="password" placeholder="Password"/>
+              <input class="full-width has-padding has-border" id="sign-in-password" type="password" name="password" placeholder="Password"/>
             </p>
 
             <p class="fieldset">
-              <input id="sign-in-login" type="submit" value="Login"/>
+              <input class="full-width has-padding has-border" id="sign-in-login" type="submit" value="Login"/>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="remember-me" checked>
+              <label for="remember-me">Remember me</label>
             </p>
           </form>
-
-          <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+            <p class="forgot-password"><a href="#">Forgot your password?</a></p>
         </div>
 
         <div id="cd-signup">
           <form class="cd-form">
+            <div class="fb-signup"><a href="#">SIGNUP WITH FACEBOOK</a></div>
+
+            <div class="linethru"><span class="linethru-text">Or signup with your email</span></div>
+
             <p class="fieldset">
-              <input id="signup-fname" type="fname" placeholder="First Name" />
-              <input id="signup-lname" type="lname" placeholder="Last Name" />
+              <input class="full-width has-padding has-border" id="signup-fname" type="fname" placeholder="First Name" />
             </p>
 
             <p class="fieldset">
-              <input id="signup-email" type="email" placeholder="E-mail" />
+              <input class="full-width has-padding has-border" id="signup-lname" type="lname" placeholder="Last Name" />
             </p>
 
             <p class="fieldset">
-              <input id="signup-password" type="password" placeholder="Password"/>
+              <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail" />
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding has-border" id="signup-password" type="password" placeholder="Password"/>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="accept-terms" checked>
+              <label for="accept-terms">Sign me up for the weekly newsletter</label>
+            </p>
+
+            <p class="fieldset">
+              <div class="terms">By signing up, you agree to our <a href="#">TERMS OF USE</a> and <a href="#">PRIVACY POLICY</a></div>
+            </p>
+
+            <div class="line"></div>
+
+            <p class="fieldset">
+              <div class="account-login">Already have an account? <a href="#">Login</a></div>
             </p>
           </form>
         </div>
@@ -181,7 +211,7 @@
 
 
     </footer>
-
+    <a href="#" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
