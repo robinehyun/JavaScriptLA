@@ -37,7 +37,7 @@ div#text-overlay {
   outline: none; }
 
 #nav-wrap {
-  font: 14px "Open Sans", sans-serif;
+  font: 0.875em "Open Sans", sans-serif;
   font-weight: 300;
   width: 528px;
   text-transform: uppercase;
@@ -45,6 +45,9 @@ div#text-overlay {
   z-index: 100;
   position: absolute;
   left: 0; }
+  @media screen and (min-width: 1024px) and (max-width: 1050px) {
+    #nav-wrap {
+      font-size: 0.75em; } }
 
 #nav-wrap > a.mobile-btn {
   display: none; }
@@ -53,7 +56,6 @@ ul#nav {
   min-height: 48px;
   width: 100%;
   text-align: center;
-  margin-left: 15px;
   margin-top: 20px; }
 
 ul#nav li {
@@ -81,6 +83,9 @@ ul#nav li a:active {
 ul#nav li a:hover {
   padding-bottom: 3px;
   border-bottom: 2px solid #fff; }
+  @media screen and (min-width: 1024px) and (max-width: 1050px) {
+    ul#nav li a:hover {
+      cursor: pointer; } }
 
 #nav ul li a.middle-logo {
   background: url(../img/JS_Logo.png);
@@ -104,6 +109,9 @@ div#membership {
   width: 442px;
   text-align: center;
   height: 68px; }
+  @media screen and (min-width: 1024px) and (max-width: 1050px) {
+    div#membership {
+      font-size: 0.75em; } }
 
 div.member {
   margin-top: 25px; }
@@ -113,6 +121,9 @@ div.member {
   div.member a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 3px; }
+    @media screen and (min-width: 1024px) and (max-width: 1050px) {
+      div.member a:hover {
+        cursor: pointer; } }
 
 div.row-banner {
   float: left;
@@ -128,14 +139,23 @@ div.row-banner {
     -moz-osx-font-smoothing: antialiased;
     font-size: 1.25em;
     text-transform: uppercase; }
+    @media screen and (min-width: 1024px) and (max-width: 1050px) {
+      div.row-banner div.lineOne {
+        font-size: 1.2em; } }
   div.row-banner h1.lineTwo {
     font-weight: bold;
     font-size: 5em;
     margin: 0 0 !important; }
+    @media screen and (min-width: 1024px) and (max-width: 1050px) {
+      div.row-banner h1.lineTwo {
+        font-size: 4.5em; } }
   div.row-banner h2.lineThree {
     font-weight: bold;
     font-size: 3.5em;
     margin: 0 0 !important; }
+    @media screen and (min-width: 1024px) and (max-width: 1050px) {
+      div.row-banner h2.lineThree {
+        font-size: 2.95em; } }
 
 div.learn {
   margin-left: 5%;
@@ -147,11 +167,25 @@ a.learnButton {
   font-size: 1.5em;
   font: "Open Sans", sans-serif;
   width: 100px;
-  border: 1px solid #fff;
   padding: 15px 30px;
-  background-color: #fff;
   text-decoration: none;
-  color: #000; }
+  color: #000;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0px 2px 0 #6D6875, 2px 4px 6px #6D6875;
+  letter-spacing: 1px;
+  -webkit-transition: all 150ms linear;
+  transition: all 150ms linear; }
+
+a.learnButton:hover {
+  background: #6D6875;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #000;
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear; }
 
 section {
   width: 100%;
@@ -256,12 +290,20 @@ section {
     width: 60%;
     float: left;
     margin-left: 5%; }
+    @media screen and (min-width: 1024px) and (max-width: 1177px) {
+      #courses div.mid-content {
+        width: 58%;
+        font-size: 0.9em; } }
   #courses div.mid-button {
     background-color: #30184A;
     margin-top: 3%;
     margin-left: 5%;
     float: left;
     padding: 20px 30px; }
+    @media screen and (min-width: 1024px) and (max-width: 1177px) {
+      #courses div.mid-button {
+        margin-top: 2%;
+        padding: 20px 30px; } }
   #courses div.mid-button a {
     color: #fff;
     text-decoration: none; }
@@ -321,13 +363,21 @@ div#meetups {
       width: 285px;
       height: 45px;
       border-color: #6C4B9C;
-      margin-top: 8%;
+      margin-top: 50px;
       font-size: 1.25em;
-      margin-left: 4px; }
+      margin-left: 4px;
+      padding-left: 5px; }
     #newsletter div.newsletter-signupCont input::-webkit-input-placeholder {
-      color: #6C4B9C; }
+      color: #6C4B9C;
+      padding-left: 3px;
+      -webkit-box-sizing: border-box;
+      /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;
+      /* Firefox, other Gecko */
+      box-sizing: border-box;
+      /* Opera/IE 8+ */ }
     #newsletter div.newsletter-signupCont button {
-      width: 590px;
+      width: 600px;
       height: 50px;
       margin-top: 10px;
       background-color: #fff;
@@ -335,6 +385,10 @@ div#meetups {
       color: #301947;
       font-size: 1.75em;
       cursor: pointer; }
+    #newsletter div.newsletter-signupCont button:hover {
+      background-color: #6C4B9C;
+      color: #fff;
+      border: none; }
 
 footer#end {
   height: 170px;
