@@ -22,9 +22,59 @@ $(document).ready(function(){
           $('#return-to-top').fadeOut(200);   // Else fade out the arrow
       }
   });
+
   $('#return-to-top').click(function() {      // When arrow is clicked
       $('body,html').animate({
           scrollTop : 0                       // Scroll to top of body
       }, 500);
   });
+
+//cd-user-modal needs to show on click.
+var modal = $('.cd-user-modal'),
+    register = $('#register'),
+    login = $('#signin'),
+    loginForm = $('#cd-login'),
+    signupForm = $('#cd-signup'),
+    forgotPassword = $('.forgot-password'),
+    loginFromRegister = $('.register-login'),
+    closeForm = $('.cd-close-form');
+//if register is clicked, the register modal should show
+register.click(function(e){
+  e.preventDefault();
+  modal.toggleClass('is-visible');
+  loginForm.toggleClass('hide');
+});
+
+//if login is clicked OR login is clicked on the register modal, login modal should show
+login.click(function(e){
+  e.preventDefault();
+  modal.toggleClass('is-visible');
+  signupForm.toggleClass('hide');
+});
+
+//when close button is clicked, modal should disappear
+closeForm.click(function(e){
+  e.preventDefault();
+  modal.removeClass('is-visible');
+  if(loginForm.hasClass('hide') === true){
+    setTimeout(function(){
+      loginForm.removeClass('hide');
+    },400);
+  } else if (signupForm.hasClass('hide') === true){
+    setTimeout(function(){
+      signupForm.removeClass('hide');
+    },400);
+  } else {
+    loginForm.addClass('hide');
+    signupForm.addClass('hide');
+  }
+});
+
+
+$(document).keyup(function(e){
+    if(e.which=='27'){
+      modal.removeClass('is-visible');
+    }
+  });
+
 });
