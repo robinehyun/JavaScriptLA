@@ -73,9 +73,9 @@ div#text-overlay {
   }
 }
 
-#nav-wrap > a.mobile-btn {
-  display: none;
-}
+// #nav-wrap > a.mobile-btn {
+//   display: none;
+// }
 
 ul#nav {
   min-height: 48px;
@@ -98,11 +98,7 @@ ul#nav li a {
   text-decoration: none;
   text-align: left;
   color: #fff;
-  -webkit-transition: color .2s ease-in-out;
-  -moz-transition: color .2s ease-in-out;
-  -o-transition: color .2s ease-in-out;
-  -ms-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
+  @include transition(color .2s ease-in-out);
 }
 
 ul#nav li a:active {
@@ -220,8 +216,7 @@ a.learnButton {
   border: 1px solid #fff;
   box-shadow: 0px 2px 0 #6D6875, 2px 4px 6px #6D6875;
   letter-spacing: 1px;
-  -webkit-transition: all 150ms linear;
-  transition: all 150ms linear;
+  @include transition(all 150ms linear);
 }
 
 a.learnButton:hover {
@@ -231,8 +226,7 @@ a.learnButton:hover {
   color: #fff;
   text-decoration: none;
   text-shadow: -1px -1px 0 #000;
-  -webkit-transition: all 250ms linear;
-  transition: all 250ms linear;
+  @include transition(all 250ms linear);
 }
 
 section {
@@ -380,18 +374,18 @@ section {
     margin-left: 5%;
     @media screen and (min-width: 1024px) and (max-width: 1177px) {
         width: 58%;
-        font-size: 0.9em;
+        font-size: 1em;
     }
   }
 
   div.mid-button {
     background-color: #30184A;
-    margin-top: 3%;
+    margin-top: 30px;
     margin-left: 5%;
     float: left;
     padding: 20px 30px;
     @media screen and (min-width: 1024px) and (max-width: 1177px) {
-        margin-top: 2%;
+        margin-top: 5px;
         padding: 20px 30px;
     }
   }
@@ -766,11 +760,7 @@ div.account-login {
     left: 16px;
     top: 13px;
     font-size: 19px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    @include transition(all 0.3s ease);
     z-index: 150;
 }
 #return-to-top:hover {
@@ -779,4 +769,8 @@ div.account-login {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+#mobile-nav {
+  display: none;
 }

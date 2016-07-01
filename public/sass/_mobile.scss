@@ -1,0 +1,212 @@
+@media screen and (max-width: 500px) {
+  $font-OpenSans : 'Open Sans', sans-serif;
+
+  body {
+    font-style: $font-OpenSans;
+  }
+
+  #nav-wrap {
+    display: none;
+  }
+
+  #membership {
+    display: none;
+  }
+
+  #logo-wrap {
+    display: none;
+  }
+
+  img.mobileLogo {
+    margin-left: 7px;
+    margin-top: 10px;
+    width: 30px;
+  }
+  #mobile-nav {
+    display: initial;
+    font-family: "Open Sans", sans-serif;
+  }
+  .btn-header {
+    width:100%;
+    background:#6C4B9C;
+    height:50px;
+    line-height:50px;
+  }
+  .hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  .cross {
+    background: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    padding: 0px 15px 0px 15px;
+    color: #fff;
+    border: 0;
+    font-size: 3em;
+    line-height: 65px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  .menu {
+    z-index: 100;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #6C4B9C;
+    opacity: 0.95;
+    position: absolute;
+    text-align: center;
+  }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+  }
+  .menu li {
+    display: block;
+    padding: 15px 0 15px 0;
+    border-bottom: #1d1f20 1px solid;
+  }
+
+  .menu li:hover {
+    display: block;
+    background: #fff;
+    padding: 15px 0 15px 0;
+    color: #6C4B9C;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    margin: 0px;
+    color: #fff;
+  }
+  .menu ul li a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
+  header {
+    min-height: 100vh;
+  }
+
+  div.row-banner{
+    display: inline-block;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+    margin-left: 0;
+    float: none;
+
+    div.lineOne {
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.4em;
+      text-transform: uppercase;
+    }
+
+    h1.lineTwo {
+      font-weight: bold;
+      font-size: 3.5em;
+      margin: 0;
+    }
+
+    h2.lineThree {
+      font-weight: bold;
+      font-size: 2em;
+      margin: 0;
+    }
+  }
+
+  div.learn {
+    text-align: center;
+    margin-top: 30%;
+    margin-left: 20%;
+    float: none;
+    display: inline-block;
+  }
+
+  div.languages {
+    flex-wrap: wrap;
+  }
+
+  div.flex1, div.flex2, div.flex3, div.flex4, div.flex5, div.flex6 {
+    margin: 5px 0 !important;
+    height: 100px !important;
+  }
+
+  .flex1 img, .flex2 img, .flex3 img, .flex4 img, .flex5 img, .flex6 img {
+    height: 100px;
+  }
+
+  #about {
+    -webkit-flex-flow: column;
+
+    div.about-container {
+      width: 100%;
+    }
+
+    div.team-container {
+      width: 100%;
+    }
+  }
+  #courses {
+    div.courses-container {
+      width: 90%;
+      h2.courses-title {
+        text-align:center;
+      }
+      div.mid {
+        height:inherit;
+        img.mid-image {
+          float:none;
+          display: block;
+          margin: 0 auto;
+        }
+        h3.events-title, h3.training-title, h3.slack-title {
+          float:none;
+          text-align: center;
+          margin: 20px auto;
+          font-size: 1.67em;
+          width: 250px;
+        }
+        div.mid-content {
+          float:none;
+          width: 100%;
+          margin: 0;
+          text-align: center;
+        }
+        div.mid-button {
+          float:none;
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  div#meetups {
+    div.meetups-contentCont {
+      width: 80%;
+    }
+  }
+}
