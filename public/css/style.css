@@ -556,6 +556,18 @@ footer#end {
   color: #FFF;
   text-decoration: underline; }
 
+.forgot-password-2 {
+  width: 100%;
+  left: 0;
+  bottom: -35px;
+  text-align: center;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+.forgot-password-2 a {
+  color: #000;
+  text-decoration: underline; }
+
 .cd-close-form {
   /* form X button on top right */
   display: block;
@@ -641,7 +653,7 @@ div.account-login {
 #mobile-nav {
   display: none; }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   body {
     font-style: "Open Sans", sans-serif; }
   #nav-wrap {
@@ -704,12 +716,14 @@ div.account-login {
     list-style-image: none; }
   .menu li {
     display: block;
-    padding: 15px 0 15px 0;
-    border-bottom: #1d1f20 1px solid; }
+    padding: 30px 0 30px 0;
+    border-bottom: #1d1f20 1px solid;
+    height: 5vh;
+    font-size: 2em; }
   .menu li:hover {
     display: block;
     background: #fff;
-    padding: 15px 0 15px 0;
+    padding: 30px 0 30px 0;
     color: #6C4B9C; }
   .menu ul li a {
     text-decoration: none;
@@ -790,4 +804,18 @@ div.account-login {
         margin-left: 0;
         text-align: center; }
   div#meetups div.meetups-contentCont {
-    width: 80%; } }
+    width: 80%; }
+  #newsletter {
+    height: 500px; }
+    #newsletter div.newsletter-container {
+      width: 100%; }
+    #newsletter div.newsletter-signupCont {
+      height: 285px; }
+      #newsletter div.newsletter-signupCont input {
+        width: 350px;
+        margin-top: 30px; }
+      #newsletter div.newsletter-signupCont button {
+        width: 360px;
+        margin-top: 30px; }
+  footer#end nav.foot-nav-wrap {
+    width: 100%; } }
