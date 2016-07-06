@@ -441,6 +441,12 @@ div#meetups {
   }
 }
 
+div.yellow {
+  width: 100%;
+  height: 5px;
+  background-color: #FFD018;
+}
+
 #newsletter {
   height: 575px;
   width: 100%;
@@ -787,4 +793,8 @@ div.account-login {
 
 #mobile-nav {
   display: none;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+
 }

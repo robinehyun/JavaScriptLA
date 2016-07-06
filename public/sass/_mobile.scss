@@ -78,16 +78,15 @@
   }
   .menu li {
     display: block;
-    padding: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
     border-bottom: #1d1f20 1px solid;
-    height: 5vh;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .menu li:hover {
     display: block;
     background: #fff;
-    padding: 30px 0 30px 0;
+    padding: 15px 0 15px 0;
     color: #6C4B9C;
   }
   .menu ul li a {
@@ -142,13 +141,14 @@
   div.learn {
     text-align: center;
     margin-top: 30%;
-    margin-left: 20%;
+    margin-left: 0;
     float: none;
-    display: inline-block;
+    display: block;
   }
 
   div.languages {
     flex-wrap: wrap;
+    height: 75px;
   }
 
   div.flex1, div.flex2, div.flex3, div.flex4, div.flex5, div.flex6 {
@@ -157,7 +157,8 @@
   }
 
   .flex1 img, .flex2 img, .flex3 img, .flex4 img, .flex5 img, .flex6 img {
-    height: 100px;
+    height:60px;
+    width:60px;
   }
 
   #about {
@@ -183,6 +184,7 @@
           float:none;
           display: block;
           margin: 0 auto;
+          width: 100%;
         }
         h3.events-title, h3.training-title, h3.slack-title {
           float:none;
