@@ -45,22 +45,29 @@ $(document).ready(function(){
     loginForm.toggleClass('hide');
   });
 
-  //if login is clicked OR login is clicked on the register modal, login modal should show
+  //if login is clicked, the login modal should show
   login.click(function(e){
     e.preventDefault();
     modal.toggleClass('is-visible');
     signupForm.toggleClass('hide');
   });
 
+  //if login is clicked on the register modal, the login modal should show
+  loginFromRegister.click(function(e){
+    e.preventDefault();
+    loginForm.removeClass('hide');
+    signupForm.addClass('hide');
+  });
+
   //when close button is clicked, modal should disappear
   closeForm.click(function(e){
     e.preventDefault();
     modal.removeClass('is-visible');
-    if(loginForm.hasClass('hide') === true){
+    if(loginForm.hasClass('hide')){
       setTimeout(function(){
         loginForm.removeClass('hide');
       },600);
-    } else if (signupForm.hasClass('hide') === true){
+    } else if (signupForm.hasClass('hide')){
       setTimeout(function(){
         signupForm.removeClass('hide');
       },600);
